@@ -65,7 +65,8 @@ ul {
   font-size: 22px;
   text-decoration: none;
   color: #000;
-  margin-top: 15px;
+  display: block;
+  margin-bottom: 25px;
   font-family: "Roboto Slab", serif;
   font-weight: 400; }
   .block_title span {
@@ -255,6 +256,48 @@ ul {
       font-size: 14px; }
       .home-news .news-carousel__item a:hover {
         color: #7C7C7B; }
+
+.catalog {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 25px 0; }
+  .catalog__item {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 275px;
+    padding: 10px 10px 20px;
+    text-decoration: none;
+    border: 1px solid transparent; }
+    .catalog__item--img {
+      display: block;
+      float: left;
+      width: 100%;
+      margin-bottom: 15px;
+      height: 130px;
+      overflow: hidden; }
+      .catalog__item--img img {
+        min-width: 100%;
+        height: auto;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    .catalog__item h4 {
+      font-size: 16px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 400;
+      margin-top: 0;
+      color: #0A0203;
+      margin-bottom: 15px; }
+    .catalog__item p {
+      color: #0A0203;
+      font-size: 14px; }
+    .catalog__item:hover {
+      text-decoration: none;
+      border: 1px solid #d2d2d2; }
 
 @media only screen and (max-width: 770px) {
   .align-left {
