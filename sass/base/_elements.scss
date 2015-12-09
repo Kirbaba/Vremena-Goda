@@ -1,0 +1,71 @@
+.hamburger-slim {
+  background: transparent;
+  position: relative;
+  height: 30px;
+  width: 35px;
+  display: none;
+  float: right;
+  top: 5px;
+  right: 5px;
+  z-index: 99;
+  &:before,
+  &:after {
+    background: #000;
+    backface-visibility: hidden;
+    content: "";
+    height: 2px;
+    left: 0;
+    transition: 0.75s;
+    width: 35px;
+  }
+  &:before {
+    box-shadow: #000 0 10px 0 0;
+    position: absolute;
+    top: 0;
+  }
+  &:after {
+    position: absolute;
+    top: 20px;
+  }
+  &--active {
+    &:before {
+      box-shadow: transparent 0 0 0 0;
+      top: 10px;
+      transform: rotate(225deg);
+    }
+    &:after {  
+      top: 10px;
+      transform: rotate(315deg);
+    }
+  }
+}
+
+.home-news {
+  .slick-slide {
+    outline: none;
+  }
+ .slick-prev, .slick-next {
+    width: 20px;
+    height: 40px;  
+     &:before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .slick-prev {
+    left: -50px;
+    &:before {
+      background-image: url('../img/arr-gray-left.png');
+    }
+  }
+  .slick-next {
+    height: -50px;
+    &:before {
+      background-image: url('../img/arr-gray-right.png');
+    }
+  }
+}

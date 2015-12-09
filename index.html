@@ -2,14 +2,150 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fotorama.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="sass/style.css">
 </head>
 <body>
-	
-	
+	<nav class="navbar navbar-default navbar-fixed-top navigation" role="navigation">
+		<div class="container">						
+		   	<article class="navigation--contacts">
+				<a href="#">Контактная информация</a>
+				<a href="#" class="navigation--contacts--soc"><i class="fa fa-linkedin"></i></a>
+				<a href="#" class="navigation--contacts--soc"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="navigation--contacts--soc"><i class="fa fa-vk"></i></a>
+				<a href="#" class="navigation--contacts--soc"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="navigation--contacts--soc"><i class="fa fa-instagram"></i></a>
+			</article>
+			 <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      	 <a href="#nowhere" class="hamburger-slim" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"></a>	
+		      	 <div class="navbar-brand">
+					<img src="img/logo.png" alt="">
+				</div>    				
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">	
+
+		      <ul class="nav navbar-nav navbar-right navigation__list">		      
+		        <li class="dropdown"><a href="#" data-toggle="dropdown">Главная</a>					
+					<ul class="dropdown-menu">
+						<li>
+							<a href='#'>Новости</a>
+						</li>
+						<li>
+							<a href='#'>Каталог</a>
+						</li>
+						<li>
+							<a href='#'>Архитекторам</a>
+						</li>
+						<li>
+							<a href='#'>Партнёры</a>
+						</li>
+						<li>
+							<a href='#'>Контактная информация</a>
+						</li>						
+					</ul>										
+		        </li>
+		        <li><a href="#go_serv" class="smoothScroll">О Компании</a></li>
+		        <li><a href="#go_ben" class="smoothScroll">Новости</a></li>
+		        <li><a href="#go_production" class="smoothScroll">Каталог</a></li>
+		        <li><a href="#go_cont" class="smoothScroll">Услуги</a></li>
+		        <li><a href="#" class="smoothScroll">Проекты</a></li>
+		        <li><a href="#go_cont" class="smoothScroll">Архитекторам</a></li>
+		        <li><a href="#" class="smoothScroll">Партнёры</a></li>  		       
+		      </ul>
+		    </div><!-- /.navbar-collapse -->			                  
+		</div>
+	</nav>
+
+	<section class="slideshow">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="fotorama" data-width="100%"  data-ratio="1400/600" data-fit="cover" data-loop="true"  data-swipe="false"  data-click="false">			
+					<div class="slideshow__item" data-img="/img/slide1.jpg">
+						<div class="container">
+							<div class="row">
+								<a href="#" class="slideshow__item--link">
+									<h4>Мы используем передовые технологии</h4>
+									<p>Инновационные окна, двери и фасадные системы, отвечающие высочайшим требованиям к дизайну, комфорту и безопасности, и устанавливает новые стандарты.</p>
+									<span>Подробнее</span>
+								</a>	
+							</div>
+						</div>
+					</div>		
+					<div data-img="/img/slide2.jpg">
+						<div class="header__text">
+							<h4>GOLDEN MEDIA PRESENT</h4>
+							<h1>Rihanna</h1>
+							<h4>НОВЫЙ КОНЦЕРТНЫЙ ТУР ПО РОССИИ И КАЗАХСТАНУ</h4>
+						</div>	
+					</div>		
+					<div data-img="/img/slide1.jpg">
+						<div class="header__text">
+							<h4>GOLDEN MEDIA PRESENT</h4>
+							<h1>Rihanna</h1>
+							<h4>НОВЫЙ КОНЦЕРТНЫЙ ТУР ПО РОССИИ И КАЗАХСТАНУ</h4>
+						</div>	
+					</div>		
+					<div data-img="/img/slide2.jpg">
+						<div class="header__text">
+							<h4>GOLDEN MEDIA PRESENT</h4>
+							<h1>Rihanna</h1>
+							<h4>НОВЫЙ КОНЦЕРТНЫЙ ТУР ПО РОССИИ И КАЗАХСТАНУ</h4>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="home-news">
+		<div class="container">
+			<div class="row">
+				<a href="#" class="block_title">Новости <span>+</span></a>
+				<div class="news-carousel">
+					<div class="news-carousel__item">
+						<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 p0">
+							<div class="news-carousel__item--img">
+								<img src="/img/news1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+							<h4>Наши специалисты завершили работы на интересном объекте</h4>
+							<small>25.07.2015</small>
+							<p>При этом удовлетворяются самые высокие требования в отношении дизайна, комфорта и безопасности, а также сокращается уровень выбросов CO2 за счет повышения энергетической эффективности и рационального использования природных ресурсов. При этом удовлетворяются самые высокие требования в отношении дизайна, комфорта и безопасности...</p>
+							<a href="#">Подробнее +</a>
+						</div>						
+					</div>
+					<div class="news-carousel__item">
+						<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 p0">
+							<div class="news-carousel__item--img">
+								<img src="/img/news1.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+							<h4>Наши специалисты завершили работы на интересном объекте</h4>
+							<small>25.07.2015</small>
+							<p>При этом удовлетворяются самые высокие требования в отношении дизайна, комфорта и безопасности, а также сокращается уровень выбросов CO2 за счет повышения энергетической эффективности и рационального использования природных ресурсов. При этом удовлетворяются самые высокие требования в отношении дизайна, комфорта и безопасности...</p>
+							<a href="#">Подробнее +</a>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fotorama.js"></script>
+	<script src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

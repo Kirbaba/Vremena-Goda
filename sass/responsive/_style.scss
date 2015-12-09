@@ -12,5 +12,17 @@
 }
 
 @media only screen and (max-width: 500px) {
-	
+	.hamburger-slim {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-right .dropdown-menu {
+	    left: 0;
+	}
+	.navbar-nav>li>a {
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
 }

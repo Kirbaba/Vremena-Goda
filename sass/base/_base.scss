@@ -1,3 +1,7 @@
+body {
+	font-family: $rob;
+	font-weight: 300;
+}
 a {
 	text-decoration: none;
 	&:hover, &:focus, &:active{
@@ -11,9 +15,18 @@ ul {
 
 .block_title {
 	color: #fff;
-    font-size: 3.5em;
-	text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+	color: #000;
 	margin-top: 15px;	
+	font-family: $rob-s;
+	font-weight: 400;
+	span {
+		color: #D2D2D2;
+	}
+	&:hover {
+		color: #000;
+	}
 }
 
 .p0  {
@@ -26,6 +39,14 @@ ul {
 .align-right {
 	text-align: right;
 }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+}
+
+
 
 
 

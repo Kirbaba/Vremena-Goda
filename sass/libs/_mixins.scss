@@ -35,3 +35,28 @@
 	text-shadow: $shadow;
 }
 	
+@mixin overflow-img() {
+	overflow: hidden;
+	img {
+		min-width: 100%;
+		height: auto;
+		position: relative;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+@mixin inside-pad() {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;	
+	&:before,
+	&:after{		
+		display: table;
+		content: " ";
+	}
+	&:after{
+		clear: both;
+	}
+}
