@@ -119,25 +119,25 @@ ul {
     top: 10px;
     transform: rotate(315deg); }
 
-.home-news .slick-slide {
+.home-news .slick-slide, .partners .slick-slide {
   outline: none; }
-.home-news .slick-prev, .home-news .slick-next {
+.home-news .slick-prev, .home-news .slick-next, .partners .slick-prev, .partners .slick-next {
   width: 20px;
   height: 40px; }
-  .home-news .slick-prev:before, .home-news .slick-next:before {
+  .home-news .slick-prev:before, .home-news .slick-next:before, .partners .slick-prev:before, .partners .slick-next:before {
     content: "";
     background-repeat: no-repeat;
     background-position: 50% 50%;
     display: block;
     width: 100%;
     height: 100%; }
-.home-news .slick-prev {
+.home-news .slick-prev, .partners .slick-prev {
   left: -50px; }
-  .home-news .slick-prev:before {
+  .home-news .slick-prev:before, .partners .slick-prev:before {
     background-image: url("../img/arr-gray-left.png"); }
-.home-news .slick-next {
+.home-news .slick-next, .partners .slick-next {
   height: -50px; }
-  .home-news .slick-next:before {
+  .home-news .slick-next:before, .partners .slick-next:before {
     background-image: url("../img/arr-gray-right.png"); }
 
 .navigation {
@@ -298,6 +298,37 @@ ul {
     .catalog__item:hover {
       text-decoration: none;
       border: 1px solid #d2d2d2; }
+
+.partners {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  margin: 25px 0 50px; }
+  .partners--wrapper {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #d2d2d2; }
+  .partners-carousel {
+    margin: 25px 0; }
+    .partners-carousel__item {
+      margin-right: 25px; }
+      .partners-carousel__item--logo {
+        display: block;
+        width: 100%;
+        height: 130px;
+        line-height: 130px;
+        border-bottom: 1px solid #d2d2d2; }
+        .partners-carousel__item--logo img {
+          display: inline-block;
+          line-height: normal;
+          vertical-align: middle;
+          max-height: 100%;
+          max-width: 100%; }
+      .partners-carousel__item h5 {
+        font-size: 16px;
+        color: #0A0203;
+        font-family: "Roboto Slab", serif;
+        margin: 10px 0; }
 
 @media only screen and (max-width: 770px) {
   .align-left {

@@ -106,3 +106,41 @@
 	}
 }
 
+.partners {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	margin: 25px 0 50px;
+	&--wrapper {
+		padding-bottom: 100px;		
+		border-bottom: 1px solid #d2d2d2;
+	}
+	&-carousel {
+		margin: 25px 0;
+		&__item {
+			margin-right: 25px;
+			&--logo {
+				display: block;
+				width: 100%;
+				height: 130px;
+				line-height: 130px;
+				border-bottom: 1px solid #d2d2d2;
+				img {
+					display: inline-block;
+					line-height: normal;
+					vertical-align: middle;
+					max-height: 100%;
+					max-width: 100%;
+				}
+			}
+			h5 {
+				font-size: 16px;
+				color: #0A0203;
+				font-family: $rob-s;
+				margin: 10px 0;
+			}
+		}
+	}
+}
+

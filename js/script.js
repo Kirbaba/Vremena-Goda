@@ -42,4 +42,40 @@ jQuery(function ($) {
         slidesToScroll: 1
         
     });
+
+    jQuery('.partners-carousel').slick({
+        dots: false,
+        infinite: true,
+        autoplay: false,
+        speed: 300,
+        focusOnSelect: false,
+        arrows: true,        
+        slidesToShow: 4,
+        slidesToScroll: 1,
+         responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 770,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 });
