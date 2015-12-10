@@ -473,6 +473,58 @@ ul {
     .question--but:hover, .question--but:active, .question--but:focus {
       background-color: #0eccff; }
 
+.footer {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  background-color: #F0F0F0;
+  padding: 75px 0 25px; }
+  .footer--sitemap {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #D2D2D2;
+    padding-bottom: 75px; }
+    .footer--sitemap ul {
+      display: block;
+      padding: 0;
+      margin-bottom: 25px; }
+      .footer--sitemap ul li {
+        margin: 5px 0; }
+        .footer--sitemap ul li a {
+          color: #7C7C7B;
+          font-size: 14px; }
+        .footer--sitemap ul li a.footer--sectionlink {
+          font-family: "Roboto Slab", serif;
+          font-size: 16px;
+          color: #000; }
+          .footer--sitemap ul li a.footer--sectionlink span {
+            color: #7C7C7B; }
+  .footer--info {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 50px 0 25px;
+    margin-left: 15px; }
+    .footer--info h4 {
+      font-family: "Roboto Slab", serif;
+      font-size: 16px; }
+    .footer--info a {
+      color: #000; }
+    .footer--info .navigation--contacts {
+      padding: 0 !important; }
+  .footer--copyright {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 25px; }
+    .footer--copyright p {
+      color: #7C7C7B; }
+
 @media only screen and (max-width: 770px) {
   .align-left {
     text-align: center; }

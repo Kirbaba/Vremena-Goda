@@ -4,6 +4,7 @@
 	position: relative;
 	width: 100%;
 	background-color: #F0F0F0;
+	padding: 75px 0 25px;
 	&--sitemap {
 		display: block;
 		float: left;
@@ -16,18 +17,47 @@
 			padding: 0;
 			margin-bottom: 25px;
 			li {
+				margin: 5px 0;
 				a {
 					color: #7C7C7B;
 					font-size: 14px;
 				}
+				a.footer--sectionlink {
+					font-family: $rob-s;
+					font-size: 16px;
+					color: #000;
+					span {
+						color: #7C7C7B;
+					}
+				}
 			}
 		}
 	}
-	&--sectionlink {
-		font-family: $rob-s;
-		font-size: 16px;
-		color: #000;
-		span {
+	&--info {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		margin: 50px 0 25px;
+		margin-left: 15px;
+		h4 {
+			font-family: $rob-s;
+			font-size: 16px;				
+		}
+		a {
+			color: #000;	
+		}
+		.navigation--contacts {
+			padding: 0 !important;
+		}
+	}
+	&--copyright {
+		display: block;
+		float: left;
+		width: 100%;
+		position: relative;
+		margin-top: 25px;	
+		p {
 			color: #7C7C7B;
 		}
 	}
