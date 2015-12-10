@@ -14,6 +14,22 @@
 			left: 17%;
 			bottom: 50px;
 			background-color: rgba(255, 255, 255, .9);
+			text-decoration: none;
+			h4 {
+				color: #0A0203;
+				font-family: $rob-s;
+				font-size: 20px;
+			}
+			p {
+				color: #0A0203;
+				font-size: 14px;
+			}
+			span {
+				color: #7C7C7B;
+			}
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 }
@@ -310,4 +326,20 @@
 			background-color: darken(#5ADCFF, 15%);
 		}
 	}
+	h2 {
+		width: 100%;
+	}
+}
+
+.init-slide {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-image: url('../img/arch-bg.jpg');
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
 }
