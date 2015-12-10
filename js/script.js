@@ -43,7 +43,7 @@ jQuery(function ($) {
         
     });
 
-    jQuery('.partners-carousel').slick({
+    jQuery('.brands-carousel').slick({
         dots: false,
         infinite: true,
         autoplay: false,
@@ -79,3 +79,34 @@ jQuery(function ($) {
         ]
     });
 });
+
+ymaps.ready(init);
+        
+function init() {
+    var myMap = new ymaps.Map('map', {
+            center: [59.914619, 30.323971],
+            zoom: 12,
+            controls: [],
+            
+        })  ,
+        myPlacemark = new ymaps.Placemark([59.932955, 30.349115], {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref:  '../img/marker.png',
+            // Размеры метки.
+            iconImageSize: [55, 81],
+            iconImageOffset: [-28, -77]
+
+            
+        });
+    
+
+    
+    myMap.behaviors.disable('scrollZoom');
+    myMap.geoObjects.add(myPlacemark);
+}
