@@ -1,3 +1,10 @@
+/*
+ * Created with Sublime Text 2.
+ * User: song.chen
+ * Date: 2015-12-11
+ * Time: 09:41:09
+ * Contact: song.chen@qunar.com
+ */
 $(function() {
 
     $(window).scroll(function() {
@@ -83,57 +90,64 @@ jQuery(function ($) {
 ymaps.ready(init);
         
 function init() {
-    var myMap = new ymaps.Map('map', {
-            center: [59.914619, 30.323971],
-            zoom: 12,
-            controls: [],
-            
-        })  ,
-        myPlacemark = new ymaps.Placemark([59.932955, 30.349115], {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref:  '../vremena-goda/img/marker.png',
-            // Размеры метки.
-            iconImageSize: [55, 81],
-            iconImageOffset: [-28, -77]
+    if ($('#map').length > 0) {
 
-            
-        });
-    
 
-    
-    myMap.behaviors.disable('scrollZoom');
-    myMap.geoObjects.add(myPlacemark);
+        var myMap = new ymaps.Map('map', {
+                center: [59.914619, 30.323971],
+                zoom: 12,
+                controls: [],
+                
+            })  ,
+            myPlacemark = new ymaps.Placemark([59.932955, 30.349115], {
+                hintContent: 'Собственный значок метки',
+                balloonContent: 'Это красивая метка'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref:  '../vremena-goda/img/marker.png',
+                // Размеры метки.
+                iconImageSize: [55, 81],
+                iconImageOffset: [-28, -77]
 
-    var Map = new ymaps.Map('map_contact', {
-            center: [59.914619, 30.323971],
-            zoom: 12,
-            controls: [],
-            
-        })  ,
-        Placemark = new ymaps.Placemark([59.932955, 30.349115], {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref:  '../vremena-goda/img/marker.png',
-            // Размеры метки.
-            iconImageSize: [55, 81],
-            iconImageOffset: [-28, -77]
+                
+            });
+        
 
-            
-        });
-    
+        
+        myMap.behaviors.disable('scrollZoom');
+        myMap.geoObjects.add(myPlacemark);
+    } 
 
-    
-    Map.behaviors.disable('scrollZoom');
-    Map.geoObjects.add(Placemark);
+    if ($('#map_contact').length > 0) {
+
+        var Map = new ymaps.Map('map_contact', {
+                center: [59.914619, 30.323971],
+                zoom: 12,
+                controls: [],
+                
+            })  ,
+            Placemark = new ymaps.Placemark([59.932955, 30.349115], {
+                hintContent: 'Собственный значок метки',
+                balloonContent: 'Это красивая метка'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref:  '../vremena-goda/img/marker.png',
+                // Размеры метки.
+                iconImageSize: [55, 81],
+                iconImageOffset: [-28, -77]
+
+                
+            });
+        
+
+        
+        Map.behaviors.disable('scrollZoom');
+        Map.geoObjects.add(Placemark);
+}
 }
