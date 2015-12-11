@@ -6,7 +6,8 @@
 	&__item {
 		padding-top: 84px;
 		&--link {
-			width: 33%;
+			width: 350px;
+			height: 210px;
 			padding: 20px;
 			display: block;
 			float: left;
@@ -19,6 +20,7 @@
 				color: #0A0203;
 				font-family: $rob-s;
 				font-size: 20px;
+				margin-top: 0;
 			}
 			p {
 				color: #0A0203;

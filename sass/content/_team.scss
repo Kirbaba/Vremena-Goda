@@ -58,4 +58,83 @@
 			}
 		}
 	}
+	&__reviews {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		padding-top: 50px;
+		&__item  {
+			margin: 20px 0;
+			display: block;
+			width: 100%;
+			float: left;
+			height: 290px;
+			text-decoration: none;
+			color: #0A0203;
+			h4 {
+				margin: 0 0 20px;
+				font-family: $rob-s;
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+			&:hover, &:active, &:focus {
+				color: #0A0203;
+				text-decoration: none;
+			}
+		}
+		&--more {
+			display: block;
+			float: left;
+			width: 100%;
+			text-align: center;
+			color: #FFF;
+			font-family: $rob-s;
+			font-size: 16px;
+			color: #FFF;
+			text-decoration: none;
+			height: 50px;
+			line-height: 50px;
+			background-color: #D2D2D2;
+			&:hover, &:focus, &:active {
+				background-color: darken(#D2D2D2, 15%);
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+	&__competence {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		padding: 50px 0;
+		&__item  {
+			margin: 20px 0;
+			display: block;
+			width: 100%;
+			float: left;
+			height: 290px;
+			text-decoration: none;
+			color: #0A0203;
+			h4 {
+				margin: 0 0 20px;
+				font-family: $rob-s;
+				width: 80%;
+			}
+			p {
+				width: 80%;
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+			&:hover, &:active, &:focus {
+				color: #0A0203;
+				text-decoration: none;
+			}
+		}
+	}
 }
