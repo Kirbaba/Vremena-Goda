@@ -807,6 +807,25 @@ p {
     margin-top: 15px; }
     .page-news__more:hover {
       background-color: #D2D2D2; }
+  .page-news--modal {
+    padding: 50px 0;
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative; }
+    .page-news--modal h4 {
+      margin-top: 0;
+      color: #13100D;
+      font-size: 16px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 400; }
+    .page-news--modal small {
+      color: #7C7C7B;
+      font-size: 12px;
+      display: block;
+      margin: 15px 0; }
+    .page-news--modal img {
+      width: 100%; }
 
 .footer {
   display: block;

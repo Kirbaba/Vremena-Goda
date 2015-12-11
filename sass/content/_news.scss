@@ -127,4 +127,27 @@
 			background-color: #D2D2D2;
 		}
 	}
+	&--modal {
+		padding: 50px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		position: relative;
+		h4 {
+			margin-top: 0;
+			color: #13100D;
+			font-size: 16px;
+			font-family: $rob-s;
+			font-weight: 400;
+		}
+		small {
+			color: #7C7C7B;
+			font-size: 12px;
+			display: block;
+			margin: 15px 0;
+		}
+		img {
+			width: 100%;
+		}
+	}
 }	
