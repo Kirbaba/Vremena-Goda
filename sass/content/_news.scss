@@ -1,0 +1,130 @@
+.page-news {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 100px 0 75px;
+	&--wrapper {
+		border-top: 1px solid #d2d2d2;
+		display: block;
+		float: left;
+		width: 100%;
+		padding-top: 75px;
+	} 
+	h2 {
+		margin-bottom: 0;
+	}
+	&__item {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		padding: 15px 0;
+		border: 1px solid transparent;
+		&--img {
+			display: block;
+			float: left;
+			width: 100%;
+			height: 290px;
+			@include overflow-img;
+		}
+		a.page-news__item--title{
+			color: #13100D;
+			h4 {
+				margin-top: 0;
+				color: #13100D;
+				font-size: 16px;
+				font-family: $rob-s;
+				font-weight: 400;
+			}
+			&:hover {
+				h4 {
+					color: #13100D;
+				}
+			}
+		}
+		a.page-news__item--more{
+			color: #7C7C7B;
+			font-size: 14px;
+			&:hover {
+				color: #7C7C7B;
+			}			
+		}
+		small {
+			color: #7C7C7B;
+			font-size: 12px;
+			display: block;
+			margin: 15px 0;
+		}
+		&:hover {
+			border: 1px solid #d2d2d2;
+		}
+	}
+	&--search {
+		display: block;
+		float: right;
+		position: relative;
+		margin-bottom: 15px;
+		a {
+			display: block;
+			float: left;
+			position: relative;
+			margin-left: 20px;
+			width: 30px;
+			height: 30px;
+			border: 1px solid #d2d2d2;
+			i {
+				display: block;
+				width: 20px;
+				height: 20px;
+				margin: 5px;
+				background-image: url('../img/search.png');
+				background-repeat: no-repeat;
+			}
+			&:hover {
+				border: 1px solid #000;
+				.page-news--search--find {
+					background-position: -21px 0;
+				}
+				.page-news--search--reset {
+					background-position: -71px 0;
+				}
+			}
+		}
+		&--find {
+			background-position: 0 0;
+		}
+		&--reset {
+		    background-position: -50px 0;
+		}
+	}
+	&--select {
+		border: none;
+		outline: none;
+		color: #7C7C7B;
+		position: relative;
+		height: 30px;
+		line-height: 30px;
+		font-size: 14px;
+		padding-right: 20px;
+		border: none;
+		box-shadow: none;
+		background-color: transparent;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none; 
+		background: transparent url('../img/select-arr.png') no-repeat;   
+		-webkit-appearance:none; /* remove the strong OSX influence from Webkit */
+        background-position: 95% 59%;
+	}
+	&__more {
+		@extend .page-team__reviews--more;
+		background-color: transparent;
+		color: #0A0203;
+		border: 1px solid #d2d2d2;
+		margin-top: 15px;
+		&:hover {
+			background-color: #D2D2D2;
+		}
+	}
+}	

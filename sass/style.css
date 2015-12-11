@@ -651,7 +651,7 @@ p {
     .page-team__reviews__item:hover, .page-team__reviews__item:active, .page-team__reviews__item:focus {
       color: #0A0203;
       text-decoration: none; }
-  .page-team__reviews--more {
+  .page-team__reviews--more, .page-news__more {
     display: block;
     float: left;
     width: 100%;
@@ -664,7 +664,7 @@ p {
     height: 50px;
     line-height: 50px;
     background-color: #D2D2D2; }
-    .page-team__reviews--more:hover, .page-team__reviews--more:focus, .page-team__reviews--more:active {
+    .page-team__reviews--more:hover, .page-news__more:hover, .page-team__reviews--more:focus, .page-news__more:focus, .page-team__reviews--more:active, .page-news__more:active {
       background-color: #acacac;
       text-decoration: none;
       color: #fff; }
@@ -694,6 +694,119 @@ p {
     .page-team__competence__item:hover, .page-team__competence__item:active, .page-team__competence__item:focus {
       color: #0A0203;
       text-decoration: none; }
+
+.page-news {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 100px 0 75px; }
+  .page-news--wrapper {
+    border-top: 1px solid #d2d2d2;
+    display: block;
+    float: left;
+    width: 100%;
+    padding-top: 75px; }
+  .page-news h2 {
+    margin-bottom: 0; }
+  .page-news__item {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid transparent; }
+    .page-news__item--img {
+      display: block;
+      float: left;
+      width: 100%;
+      height: 290px;
+      overflow: hidden; }
+      .page-news__item--img img {
+        min-width: 100%;
+        height: auto;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    .page-news__item a.page-news__item--title {
+      color: #13100D; }
+      .page-news__item a.page-news__item--title h4 {
+        margin-top: 0;
+        color: #13100D;
+        font-size: 16px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 400; }
+      .page-news__item a.page-news__item--title:hover h4 {
+        color: #13100D; }
+    .page-news__item a.page-news__item--more {
+      color: #7C7C7B;
+      font-size: 14px; }
+      .page-news__item a.page-news__item--more:hover {
+        color: #7C7C7B; }
+    .page-news__item small {
+      color: #7C7C7B;
+      font-size: 12px;
+      display: block;
+      margin: 15px 0; }
+    .page-news__item:hover {
+      border: 1px solid #d2d2d2; }
+  .page-news--search {
+    display: block;
+    float: right;
+    position: relative;
+    margin-bottom: 15px; }
+    .page-news--search a {
+      display: block;
+      float: left;
+      position: relative;
+      margin-left: 20px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #d2d2d2; }
+      .page-news--search a i {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        background-image: url("../img/search.png");
+        background-repeat: no-repeat; }
+      .page-news--search a:hover {
+        border: 1px solid #000; }
+        .page-news--search a:hover .page-news--search--find {
+          background-position: -21px 0; }
+        .page-news--search a:hover .page-news--search--reset {
+          background-position: -71px 0; }
+    .page-news--search--find {
+      background-position: 0 0; }
+    .page-news--search--reset {
+      background-position: -50px 0; }
+  .page-news--select {
+    border: none;
+    outline: none;
+    color: #7C7C7B;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-right: 20px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url("../img/select-arr.png") no-repeat;
+    -webkit-appearance: none;
+    /* remove the strong OSX influence from Webkit */
+    background-position: 95% 59%; }
+  .page-news__more {
+    background-color: transparent;
+    color: #0A0203;
+    border: 1px solid #d2d2d2;
+    margin-top: 15px; }
+    .page-news__more:hover {
+      background-color: #D2D2D2; }
 
 .footer {
   display: block;
