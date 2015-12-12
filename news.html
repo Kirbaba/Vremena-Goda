@@ -350,8 +350,26 @@
 	    <div class="modal-content">
 	    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 	    	<div class="page-news--modal">
-		      	<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">					
-						<img src="img/slide1.jpg" alt="">
+		      	<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">							
+
+					<div class="top5-images">
+						<img src="img/slide1.jpg" alt="HTML 5" id="hero">
+					</div>
+
+					<div class="gallery-images" id="thumbImage">
+						<div class="col-xs-4 gallery-images--wrap">
+							<img src="img/slide2.jpg" alt="HTML 5" class="gallery--thumb">  
+						</div>
+						<div class="col-xs-4 gallery-images--wrap">
+							<img src="img/slide1.jpg" alt="HTML 5" id="hero" class="gallery--thumb">
+						</div>
+						<div class="col-xs-4 gallery-images--wrap">
+							<img src="img/arch-bg.jpg" alt="Sass" class="gallery--thumb">				
+						</div>	
+						<div class="col-xs-4 gallery-images--wrap">
+							<img src="img/slide1.jpg" alt="HTML 5" id="hero" class="gallery--thumb">
+						</div>
+					</div>
 				
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
@@ -369,6 +387,7 @@
 	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+	<script src="js/modal-gallery.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

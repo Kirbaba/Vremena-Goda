@@ -1,0 +1,27 @@
+.gallery--thumb {
+	max-height: 100%;
+}
+.gallery-images {
+	display: block;
+	float: left;	
+    margin: 0 -5px;
+	&--wrap {
+		border: 5px solid #fff;
+		height: 150px;
+		cursor: pointer;
+		@include overflow-img;
+	}
+}
+
+.top5-images {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	img {
+		width: 100%;
+		height: auto;
+		cursor: pointer;
+	}	
+}
+

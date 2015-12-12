@@ -213,8 +213,41 @@ p {
     right: 20px;
     z-index: 99;
     outline: none; }
-  .team-modal .modal-content img, .competence-modal .modal-content img {
-    width: 100%; }
+.team-modal div#page-news--modal, .competence-modal div#page-news--modal {
+  background: rgba(0, 0, 0, 0.5); }
+.team-modal .modal-backdrop.in, .competence-modal .modal-backdrop.in {
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+.gallery--thumb {
+  max-height: 100%; }
+
+.gallery-images {
+  display: block;
+  float: left;
+  margin: 0 -5px; }
+  .gallery-images--wrap {
+    border: 5px solid #fff;
+    height: 150px;
+    cursor: pointer;
+    overflow: hidden; }
+    .gallery-images--wrap img {
+      min-width: 100%;
+      height: auto;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+
+.top5-images {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%; }
+  .top5-images img {
+    width: 100%;
+    height: auto;
+    cursor: pointer; }
 
 .navigation {
   font-family: "Roboto Slab", serif;
@@ -812,7 +845,8 @@ p {
     display: block;
     float: left;
     width: 100%;
-    position: relative; }
+    position: relative;
+    background-color: #FFF; }
     .page-news--modal h4 {
       margin-top: 0;
       color: #13100D;
@@ -824,8 +858,6 @@ p {
       font-size: 12px;
       display: block;
       margin: 15px 0; }
-    .page-news--modal img {
-      width: 100%; }
 
 .footer {
   display: block;
