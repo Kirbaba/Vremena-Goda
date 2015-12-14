@@ -147,5 +147,45 @@
 			display: block;
 			margin: 15px 0;
 		}
+		&--function {
+			color: #7C7C7B;
+			text-decoration: none;
+			display: block;
+			font-size: 14px;
+			i {
+				font-style: normal;
+				font-size: 18px;
+				margin-right: 15px;
+				text-decoration: none;
+			}
+			&:hover {
+				text-decoration: none;
+				color: #7C7C7B;
+				span {
+					border-bottom: 1px dashed #7C7C7B;
+				}
+				 
+			    i {
+			    	text-decoration: none;
+			    }
+			}
+		}
 	}
 }	
+
+.simpleGallerySlide--active {
+	display: block;
+	width: 100%;
+}
+
+.gallery-images  {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	float: left;
+	.simpleGallery--main--wrap {
+		img {
+			width: 100%;
+		}
+	}
+}

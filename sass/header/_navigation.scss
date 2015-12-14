@@ -12,6 +12,10 @@
 			margin: 0 15px;
 			color: #000;
 			font-size: 15px;
+		    border-bottom: 1px dashed #000;
+		    &:hover, &:active, &:focus {
+		    	text-decoration: none;
+		    }
 		}
 		a.navigation--contacts--soc {
 			width: 22px;
@@ -65,4 +69,12 @@
 .navbar-brand {
     height: auto;
     padding: 8px 0;
+}
+
+.dropdown {
+	&:hover {
+		ul {
+			display: block;
+		}
+	}
 }

@@ -152,10 +152,16 @@ function init() {
 }
 }
 
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
     $("[data-js=open]").on("click", function() {
         popupOpenClose($(".popup"));
     });
+
+    $('#simpleGallery').simpleGallery({
+        mainContainerClass:'myClass',
+        loop: true
+    });
+
 });
 
 jQuery(function($){
@@ -184,3 +190,11 @@ $(function() {
     $( "#datepicker" ).datepicker(); 
   
 }); 
+
+$( window ).resize(function() {
+     var height = $('.navigation').height();
+     console.log(height);
+     if (height > '82') {
+        $('.fotorama').css('margin-top', height);
+     }
+});

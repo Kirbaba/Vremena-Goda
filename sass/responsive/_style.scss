@@ -9,6 +9,13 @@
 	.align-right {
 		text-align: center;
 	}
+	.dropdown {
+		&:hover {
+			ul {
+				display: none;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -24,5 +31,5 @@
 	.navbar-nav>li>a {
 	    padding-top: 10px;
 	    padding-bottom: 10px;
-	}
+	}	
 }

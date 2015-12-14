@@ -85,8 +85,10 @@
 
   button.close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 25px;
+    font-weight: 100;
+    font-size: 36px;
     z-index: 99;
     outline: none;
   }
@@ -130,9 +132,11 @@
     }
     button.close {
       position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 99;
+    top: 20px;
+    right: 25px;
+    font-weight: 100;
+    z-index: 99;
+    font-size: 36px;
       outline: none;
     }
   }
