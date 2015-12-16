@@ -279,33 +279,34 @@ $(document).ready(function () {
         // $('.fotorama__nav-wrap').css('margin-top', (nav_marg - on_slide_text_h));
         // $('.fotorama__arr').css('margin-top', arr_top);       
 
-        var fotorama_height = doc_w * 0.428;    
-        
-        //console.log( fotorama_height);
-        var on_slide_text_h = parseInt( $('.slideshow__item--link').height(),10); 
-        var $fotoramaDiv = $('#fotorama__top').fotorama();
-        var fotorama = $fotoramaDiv.data('fotorama');
-        fotorama.resize({
-            height: fotorama_height + on_slide_text_h
-        });
-        
-       // $('.fotorama__img')css('height', fotorama_height - on_slide_text_h);
-        if (doc_w < 415) {
-            var fotorama_height = doc_w * 1.2; 
+          
+        if ($('#fotorama__top').length) {
+             var fotorama_height = doc_w * 0.428; 
+            //console.log( fotorama_height);
+            var on_slide_text_h = parseInt( $('.slideshow__item--link').height(),10); 
+            var $fotoramaDiv = $('#fotorama__top').fotorama();
+            var fotorama = $fotoramaDiv.data('fotorama');
             fotorama.resize({
                 height: fotorama_height + on_slide_text_h
             });
-        } else {
-            fotorama.resize({
-                height: fotorama_height + on_slide_text_h
-            });
-        }  
+            
+           // $('.fotorama__img')css('height', fotorama_height - on_slide_text_h);
+            if (doc_w < 415) {
+                var fotorama_height = doc_w * 1.2; 
+                fotorama.resize({
+                    height: fotorama_height + on_slide_text_h
+                });
+            } else {
+                fotorama.resize({
+                    height: fotorama_height + on_slide_text_h
+                });
+            }  
+        }
     }   
 
     
 
     if (doc_w < 737) {
-        
         $(window).scroll(function() {
             if ($(".navigation--contacts").offset().top > 245) {
                  $(".navigation--contacts").slideUp();       
