@@ -296,9 +296,11 @@ p {
       margin: 0 15px;
       color: #000;
       font-size: 15px;
-      border-bottom: 1px dashed #000; }
+      text-align: center; }
       .navigation--contacts a:hover, .navigation--contacts a:active, .navigation--contacts a:focus {
         text-decoration: none; }
+    .navigation--contacts a.navigation--contacts--modal--but {
+      border-bottom: 1px dashed #000; }
     .navigation--contacts a.navigation--contacts--soc {
       width: 22px;
       height: 22px;
@@ -310,6 +312,8 @@ p {
       opacity: 0.2; }
       .navigation--contacts a.navigation--contacts--soc:hover {
         opacity: 1; }
+    .navigation--contacts .navigation--contacts--soc--wrap {
+      float: left; }
 
 .navbar-default .navbar-nav > li > a {
   color: #000;
@@ -340,11 +344,16 @@ p {
 
 .navbar-brand {
   height: auto;
-  padding: 8px 0; }
+  padding: 8px 15px;
+  display: none; }
 
-.dropdown:hover ul {
-  display: block; }
-
+/* .dropdown {
+	&:hover {
+		ul {
+			display: block;
+		}
+	}
+} */
 .onslider-logo {
   display: block;
   position: absolute;
@@ -998,6 +1007,40 @@ p {
     height: 25px;
     line-height: 25px; }
 
+@media only screen and (max-width: 1200px) {
+  .slideshow {
+    margin-top: 85px; } }
+@media only screen and (max-width: 1025px) {
+  .slideshow__item--link {
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    left: 0 !important;
+    bottom: 0px; }
+
+  .onslider-logo {
+    height: 90px;
+    width: 75px; }
+
+  .modal-contacts .cantacts-modal--text h3.block_title {
+    font-size: 18px; }
+
+  .contact-info--text--box--line {
+    border-bottom: 1px solid #D2D2D2;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    display: block; }
+
+  .slideshow .fotorama__arr {
+    top: 50%; }
+
+  .slideshow .fotorama__nav-wrap {
+    height: 30px;
+    margin: 0;
+    top: 60%;
+    position: absolute;
+    z-index: 0; } }
 @media only screen and (max-width: 770px) {
   .align-left {
     text-align: center; }
@@ -1005,11 +1048,118 @@ p {
   .align-right {
     text-align: center; }
 
-  .dropdown:hover ul {
-    display: none; } }
-@media only screen and (max-width: 500px) {
+  .navbar-default .navbar-nav > li > a {
+    color: #000;
+    font-size: 14px;
+    padding: 10px 5px; }
+
+  .dropdown-menu > li > a {
+    font-size: 14px; }
+
+  .question h2 {
+    width: inherit; }
+
+  .slideshow .fotorama__arr--prev {
+    left: 2%; }
+
+  .slideshow .fotorama__arr--next {
+    right: 2%; }
+
+  .home-news .news-carousel {
+    margin: 25px auto;
+    width: 90%; }
+
+  .brands-carousel {
+    margin: 25px auto;
+    width: 90%; }
+
+  .home-news .news-carousel__item--img {
+    margin-left: 5px; }
+
+  .modal-contacts .modal-content {
+    float: left;
+    height: auto; }
+
+  div#map_contact {
+    height: 300px !important; }
+
+  .brands-carousel__item {
+    padding-left: 2px; } }
+@media only screen and (max-width: 737px) {
   .hamburger-slim {
-    display: block; } }
+    display: block;
+    margin: 10px; }
+
+  .navigation--contacts a.navigation--contacts--modal--but {
+    border-bottom: none;
+    width: 100%;
+    text-align: center;
+    margin: 0; }
+
+  .navigation--contacts .navigation--contacts--soc--wrap {
+    /* float: left; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center; }
+
+  .navigation article.navigation--contacts {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0; }
+
+  .navbar-brand {
+    height: auto;
+    width: 71px; }
+    .navbar-brand img {
+      width: 100%; }
+
+  .navbar {
+    margin-bottom: 0; } }
+@media only screen and (max-width: 569px) {
+  .slideshow .fotorama__arr {
+    top: 40%; }
+
+  .slideshow .fotorama__nav-wrap {
+    top: 50%; } }
+@media only screen and (max-width: 500px) {
+  .home-news .news-carousel__item--img {
+    margin-left: 0; }
+
+  .slideshow {
+    margin-top: 98px; }
+
+  .home-news .news-carousel__item h4 {
+    margin-top: 15px; }
+
+  .mobile-news-sleder--text {
+    padding: 0; }
+
+  .contact-info--text {
+    position: absolute;
+    left: 15%;
+    top: 50px;
+    width: 70%; }
+
+  .navigation--contacts--modal--but {
+    display: block;
+    float: left;
+    width: 100%;
+    border: none;
+    text-decoration: underline; }
+
+  .modal-contacts .modal-dialog {
+    width: 90%;
+    margin: 25px auto; } }
+@media only screen and (max-width: 320px) {
+  .navbar-header {
+    padding-bottom: 5px; }
+
+  .onslider-logo {
+    display: block;
+    position: absolute;
+    top: 130px; } }
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {
     left: 0; }

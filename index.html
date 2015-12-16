@@ -16,12 +16,14 @@
 	<nav class="navbar navbar-default navbar-fixed-top navigation" role="navigation">
 		<div class="container">						
 		   	<article class="navigation--contacts">
-				<a href="#" data-toggle="modal" data-target="#myModal">Контактная информация</a>
-				<a href="#" class="navigation--contacts--soc"><i class="fa fa-linkedin"></i></a>
-				<a href="#" class="navigation--contacts--soc"><i class="fa fa-twitter"></i></a>
-				<a href="#" class="navigation--contacts--soc"><i class="fa fa-vk"></i></a>
-				<a href="#" class="navigation--contacts--soc"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="navigation--contacts--soc"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="navigation--contacts--modal--but" data-toggle="modal" data-target="#myModal">Контактная информация</a>
+				<div class="navigation--contacts--soc--wrap">
+					<a href="#" class="navigation--contacts--soc"><i class="fa fa-linkedin"></i></a>
+					<a href="#" class="navigation--contacts--soc"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="navigation--contacts--soc"><i class="fa fa-vk"></i></a>
+					<a href="#" class="navigation--contacts--soc"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="navigation--contacts--soc"><i class="fa fa-instagram"></i></a>
+				</div>
 			</article>
 			 <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -88,51 +90,35 @@
 	<section class="slideshow">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="fotorama" data-width="100%"  data-ratio="1400/600" data-fit="cover" data-loop="true"  data-swipe="false"  data-click="false">			
+				<div class="fotorama" id="fotorama__top" data-width="100%"  data-ratio="1400/600" data-fit="cover" data-loop="true"  data-swipe="false"  data-click="false">			
 					<div class="slideshow__item" data-img="img/slide1.jpg">
-						<div class="container">
-							<div class="row">
-								<a href="#" class="slideshow__item--link">
-									<h4>Мы используем передовые технологии</h4>
-									<p>Инновационные окна, двери и фасадные системы, отвечающие высочайшим требованиям к дизайну, комфорту и безопасности, и устанавливает новые стандарты.</p>
-									<span>Подробнее</span>
-								</a>	
-							</div>
-						</div>
+						<a href="#" class="slideshow__item--link">
+							<h4>Мы используем передовые технологии</h4>
+							<p>Инновационные окна, двери и фасадные системы, отвечающие высочайшим требованиям к дизайну, комфорту и безопасности, и устанавливает новые стандарты.</p>
+							<span>Подробнее</span>
+						</a>	
 					</div>		
-					<div data-img="img/slide2.jpg">
-						<div class="container">
-							<div class="row">
-								<a href="#" class="slideshow__item--link">
-									<h4>Мы используем передовые технологии</h4>
-									<p>Инновационные окна, двери и фасадные системы, отвечающие высочайшим требованиям к дизайну, комфорту и безопасности, и устанавливает новые стандарты.</p>
-									<span>Подробнее</span>
-								</a>	
-							</div>
-						</div>
-					</div>		
-					<div data-img="img/slide1.jpg">
-						<div class="container">
-							<div class="row">
-								<a href="#" class="slideshow__item--link">
-									<h4>Мы используем передовые технологии</h4>
-									<p>Инновационные окна, двери и фасадные системы, отвечающие высочайшим требованиям к дизайну, комфорту и безопасности, и устанавливает новые стандарты.</p>
-									<span>Подробнее</span>
-								</a>	
-							</div>
-						</div>
-					</div>		
-					<div data-img="img/slide2.jpg">
-						<div class="container">
-							<div class="row">
-								<a href="#" class="slideshow__item--link">
-									<h4>Мы используем передовые технологии</h4>
-									<p>Инновационные окна, двери и фасадные системы, отвечающие высочайшим требованиям к дизайну, комфорту и безопасности, и устанавливает новые стандарты.</p>
-									<span>Подробнее</span>
-								</a>	
-							</div>
-						</div>
+					<div  class="slideshow__item" data-img="img/slide2.jpg">
+						<a href="#" class="slideshow__item--link">
+							<h4>Мы используем передовые технологии</h4>
+							<p>Инновационные окна, двери и фасадные системы, отвечающие высочайшим требованиям к дизайну, комфорту и безопасности, и устанавливает новые стандарты.</p>
+							<span>Подробнее</span>
+						</a>	
+					</div>							
+					<div  class="slideshow__item" data-img="img/slide2.jpg">
+						<a href="#" class="slideshow__item--link">
+							<h4>Мы используем передовые технологии</h4>
+							<p>Инновационные окна, двери и фасадные системы, отвечающие высочайшим требованиям к дизайну, комфорту и безопасности, и устанавливает новые стандарты.</p>
+							<span>Подробнее</span>
+						</a>	
 					</div>
+					<div class="slideshow__item" data-img="img/slide1.jpg">
+						<a href="#" class="slideshow__item--link">
+							<h4>Мы используем передовые технологии</h4>
+							<p>Инновационные окна, двери и фасадные системы, отвечающие высочайшим требованиям к дизайну, комфорту и безопасности, и устанавливает новые стандарты.</p>
+							<span>Подробнее</span>
+						</a>	
+					</div>	
 				</div>
 			</div>
 		</div>
@@ -145,12 +131,12 @@
 				</div>
 				<div class="news-carousel">
 					<div class="news-carousel__item">
-						<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 p0">
+						<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 p0">
 							<div class="news-carousel__item--img">
 								<img src="img/news1.jpg" alt="">
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+						<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 mobile-news-sleder--text">
 							<h4>Наши специалисты завершили работы на интересном объекте</h4>
 							<small>25.07.2015</small>
 							<p>При этом удовлетворяются самые высокие требования в отношении дизайна, комфорта и безопасности, а также сокращается уровень выбросов CO2 за счет повышения энергетической эффективности и рационального использования природных ресурсов. При этом удовлетворяются самые высокие требования в отношении дизайна, комфорта и безопасности...</p>
@@ -163,7 +149,7 @@
 								<img src="img/news1.jpg" alt="">
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mobile-news-sleder--text">
 							<h4>Наши специалисты завершили работы на интересном объекте</h4>
 							<small>25.07.2015</small>
 							<p>При этом удовлетворяются самые высокие требования в отношении дизайна, комфорта и безопасности, а также сокращается уровень выбросов CO2 за счет повышения энергетической эффективности и рационального использования природных ресурсов. При этом удовлетворяются самые высокие требования в отношении дизайна, комфорта и безопасности...</p>
@@ -305,77 +291,77 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/Layer-23.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/Layer-24.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/Layer-25.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/Layer-26.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/Guardian-logo.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/9554750.jpg" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/evropanorama.jpg" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/BaltFasad.gif" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/logo1.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/oknoburg.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/veka.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/agc-logo.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-1">
+				<div class="col-md-1 col-sm-2 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/Screenshot_3.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-md-2 col-sm-4 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/Screenshot_1.png" alt="">
 					</div>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-md-2 col-sm-4 col-xs-3">
 					<div class="partners--brand">
 						<img src="img/logo_200x37.png" alt="">
 					</div>
@@ -599,11 +585,13 @@
 	    </div>
 	  </div>
 	</div>
+	<span id="info__important" text-slide__height="" fotorama-slide__height="" fotorama-nav-wrap=""></span>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/fotorama.js"></script>
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+	<script src="js/jq-modal-gallery.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

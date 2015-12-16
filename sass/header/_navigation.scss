@@ -12,10 +12,13 @@
 			margin: 0 15px;
 			color: #000;
 			font-size: 15px;
-		    border-bottom: 1px dashed #000;
+		    text-align: center;
 		    &:hover, &:active, &:focus {
 		    	text-decoration: none;
 		    }
+		}
+		a.navigation--contacts--modal--but {
+			border-bottom: 1px dashed #000;
 		}
 		a.navigation--contacts--soc {
 			width: 22px;
@@ -29,6 +32,9 @@
 			&:hover {
 				opacity: 1;
 			}
+		}
+		.navigation--contacts--soc--wrap {
+		    float: left;
 		}
 	}
 }
@@ -68,13 +74,14 @@
 
 .navbar-brand {
     height: auto;
-    padding: 8px 0;
+    padding: 8px 15px;
+    display: none;
 }
 
-.dropdown {
+/* .dropdown {
 	&:hover {
 		ul {
 			display: block;
 		}
 	}
-}
+} */
