@@ -132,6 +132,36 @@
     .navbar {
 		margin-bottom: 0;
     }
+    .page-team__reviews__item {
+    	height: auto;
+    }
+
+    .page-team__competence__item {
+    	height: auto;
+    }
+    .onslider-logo {
+    	top: 120px;
+    }
+    .page-team__competence__item img { 
+    	margin-bottom: 25px;
+    }
+    .team-modal .modal-content h4, .competence-modal .modal-content h4 {
+    	margin-top: 25px;
+    }
+
+    .footer--dev {
+	    margin-left: 0;
+	}
+
+	.modal-contacts .cantacts-modal--text .contact-info--text--box {
+	    padding: 0;
+	}
+	.modal-contacts .cantacts-modal--text h3.block_title {
+		padding-left: 0;
+	}
+	.modal-contacts .cantacts-modal--text a.small_link {
+		padding-left: 0;
+	}
 }
 
 @media only screen and (max-width: 569px) {
